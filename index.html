@@ -1,30 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="robots" content="noindex,nofollow,noarchive" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
 <title>Science 2026 Learning Portal</title>
 <style>
-:root{
-  --bg:#07111f;--panel:#0d1c31;--panel2:#132945;--line:rgba(255,255,255,.12);
-  --text:#f5fbff;--muted:#9fb3c8;--cyan:#66d9ff;--blue:#568cff;--violet:#8a6cff;
-  --green:#67e0b0;--shadow:0 24px 70px rgba(0,0,0,.42);
-}
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"Noto Sans SC",sans-serif;background:var(--bg);color:var(--text)}
-body{overflow-x:hidden;background:
-radial-gradient(circle at 12% 12%,rgba(86,140,255,.18),transparent 30%),
-radial-gradient(circle at 88% 18%,rgba(138,108,255,.14),transparent 28%),
-linear-gradient(155deg,#050b14 0%,#09192b 52%,#06101d 100%)}
-body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:36px 36px;mask-image:linear-gradient(to bottom,#000,transparent 85%)}
-.hidden{display:none!important}.shell{width:min(1180px,calc(100% - 28px));margin:0 auto}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:13px;font-weight:850;letter-spacing:.2px}.logo{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#1e4770,#0d2038);border:1px solid rgba(255,255,255,.15);box-shadow:inset 4px 4px 10px rgba(255,255,255,.08),inset -5px -6px 12px rgba(0,0,0,.38),0 10px 26px rgba(0,0,0,.25);font-size:22px}.brand small{display:block;color:var(--muted);font-weight:600;font-size:12px;margin-top:2px}.status{padding:8px 12px;border-radius:999px;border:1px solid rgba(103,224,176,.25);background:rgba(103,224,176,.08);color:#aaf1d4;font-size:12px;font-weight:750}
-.hero{padding:42px 0 26px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}.eyebrow{color:#8adfff;text-transform:uppercase;letter-spacing:2.2px;font-size:12px;font-weight:850}.hero h1{font-size:clamp(42px,7vw,82px);line-height:.95;margin:14px 0 18px;letter-spacing:-3px}.hero h1 span{background:linear-gradient(90deg,#fff,#7adfff 45%,#a99cff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:700px;color:var(--muted);font-size:17px;line-height:1.75}.hero3d{height:280px;position:relative;perspective:900px}.orb{position:absolute;border-radius:28px;border:1px solid rgba(255,255,255,.16);background:linear-gradient(145deg,rgba(37,80,124,.82),rgba(10,27,48,.88));box-shadow:inset 8px 8px 22px rgba(255,255,255,.08),inset -12px -16px 28px rgba(0,0,0,.34),0 34px 70px rgba(0,0,0,.34);backdrop-filter:blur(18px)}.orb.one{width:210px;height:150px;right:48px;top:20px;transform:rotateY(-18deg) rotateX(8deg) rotateZ(8deg)}.orb.two{width:160px;height:120px;right:8px;bottom:18px;transform:rotateY(24deg) rotateX(-8deg) rotateZ(-9deg);background:linear-gradient(145deg,rgba(106,74,202,.78),rgba(18,32,60,.92))}.orb.three{width:118px;height:118px;left:36px;bottom:28px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#71e7ff,#4774dd 42%,#16263e 75%);box-shadow:inset -18px -22px 28px rgba(0,0,0,.35),0 24px 55px rgba(21,108,255,.28)}.atom{position:absolute;right:93px;top:65px;font-size:70px;filter:drop-shadow(0 12px 16px rgba(0,0,0,.35))}.caption{position:absolute;right:35px;bottom:63px;font-size:12px;color:#dce9ff;font-weight:800;letter-spacing:1px}
-.section-head{display:flex;align-items:end;justify-content:space-between;margin:26px 0 16px}.section-head h2{margin:0;font-size:28px}.section-head p{margin:0;color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:70px}.card{position:relative;min-height:210px;padding:22px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(21,45,74,.92),rgba(9,23,41,.94));box-shadow:inset 4px 4px 12px rgba(255,255,255,.035),inset -8px -10px 20px rgba(0,0,0,.22),0 18px 42px rgba(0,0,0,.24);cursor:pointer;overflow:hidden;transition:.28s ease;transform-style:preserve-3d}.card:hover{transform:translateY(-7px) rotateX(1deg);border-color:rgba(102,217,255,.38);box-shadow:0 28px 62px rgba(0,0,0,.34),0 0 0 1px rgba(102,217,255,.07)}.card::after{content:"";position:absolute;width:130px;height:130px;right:-38px;top:-40px;border-radius:50%;background:radial-gradient(circle,#5adfff55,transparent 70%);filter:blur(2px)}.card .type{font-size:11px;letter-spacing:1.8px;color:#7cdfff;text-transform:uppercase;font-weight:900}.card h3{font-size:21px;line-height:1.25;margin:20px 0 8px}.card p{color:var(--muted);font-size:13px;line-height:1.6;margin:0}.go{position:absolute;left:22px;bottom:20px;font-weight:850;font-size:13px;color:#dff7ff}.go b{display:inline-grid;place-items:center;width:27px;height:27px;margin-left:8px;border-radius:9px;background:linear-gradient(145deg,#2f76a3,#173852);box-shadow:inset 2px 2px 5px rgba(255,255,255,.12),0 8px 16px rgba(0,0,0,.22)}
-#login{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:20px;background:radial-gradient(circle at 20% 10%,#183659 0,transparent 31%),radial-gradient(circle at 85% 80%,#271b51 0,transparent 32%),#050b13}.loginbox{width:min(430px,100%);padding:32px;border-radius:26px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(145deg,rgba(22,45,73,.94),rgba(8,19,34,.97));box-shadow:var(--shadow),inset 5px 5px 16px rgba(255,255,255,.04);text-align:center}.lock{width:76px;height:76px;margin:0 auto 20px;border-radius:24px;display:grid;place-items:center;font-size:34px;background:linear-gradient(145deg,#24587e,#11273f);box-shadow:inset 4px 4px 10px rgba(255,255,255,.08),inset -8px -10px 15px rgba(0,0,0,.26),0 16px 34px rgba(0,0,0,.28)}.loginbox h2{margin:0 0 7px;font-size:28px}.loginbox p{margin:0 0 22px;color:var(--muted);font-size:14px}.pin{display:flex;gap:10px}.pin input{flex:1;min-width:0;border:1px solid rgba(255,255,255,.15);background:#091727;color:#fff;border-radius:13px;padding:14px 15px;font-size:18px;letter-spacing:5px;outline:none}.pin input:focus{border-color:#69d9ff;box-shadow:0 0 0 3px rgba(105,217,255,.1)}.pin button{border:0;border-radius:13px;padding:0 18px;background:linear-gradient(145deg,#39a9d6,#416ae9);color:#fff;font-weight:850;cursor:pointer;box-shadow:0 10px 24px rgba(50,111,210,.28)}.error{height:20px;color:#ff9b9b;font-size:12px;margin-top:12px}
-#viewer{position:fixed;inset:0;z-index:500;background:#07111f}.viewerbar{height:64px;padding:0 14px;display:flex;align-items:center;gap:12px;background:rgba(6,17,31,.96);border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(16px)}.homebtn,.closebtn{border:1px solid rgba(255,255,255,.13);color:white;background:linear-gradient(145deg,#193b59,#0c2035);border-radius:12px;padding:10px 14px;font-weight:850;cursor:pointer;box-shadow:inset 2px 2px 7px rgba(255,255,255,.05)}.viewer-title{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#c9d9e8;font-weight:750;font-size:13px}#lessonFrame{width:100%;height:calc(100vh - 64px);border:0;background:white}
-.footer-note{color:#6f8498;text-align:center;font-size:11px;padding:0 0 34px}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero3d{display:none}.grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.topbar{height:66px}.status{display:none}.hero{padding-top:28px}.hero h1{letter-spacing:-2px}.grid{grid-template-columns:1fr}.card{min-height:190px}.section-head{align-items:flex-start;flex-direction:column;gap:6px}}
+:root{--bg:#07111f;--panel:#10233a;--panel2:#173453;--line:rgba(255,255,255,.13);--text:#f5fbff;--muted:#9cb2c6;--cyan:#62d9ff;--green:#75e4b6;--shadow:0 22px 65px rgba(0,0,0,.42)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,system-ui,-apple-system,"Segoe UI",Arial,"Noto Sans SC",sans-serif;background:#07111f;color:var(--text)}
+body{background:radial-gradient(circle at 12% 12%,rgba(62,134,255,.20),transparent 30%),radial-gradient(circle at 88% 12%,rgba(139,92,246,.18),transparent 28%),linear-gradient(150deg,#050b14,#0a1a2d 55%,#07111f);overflow-x:hidden}
+.hidden{display:none!important}.shell{width:min(1180px,calc(100% - 28px));margin:auto}.top{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:12px;align-items:center;font-weight:900}.logo{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(145deg,#285f89,#0e2239);border:1px solid rgba(255,255,255,.14);box-shadow:inset 4px 4px 10px rgba(255,255,255,.08),inset -7px -8px 14px rgba(0,0,0,.35),0 12px 30px rgba(0,0,0,.25);font-size:24px}.brand small{display:block;color:var(--muted);font-weight:600;font-size:12px}.secure{font-size:12px;color:#b9f6dd;border:1px solid rgba(117,228,182,.3);background:rgba(117,228,182,.08);padding:8px 12px;border-radius:999px}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;padding:48px 0 28px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:900;color:#7adfff}.hero h1{font-size:clamp(44px,7vw,82px);line-height:.96;letter-spacing:-3px;margin:12px 0 16px}.hero h1 span{background:linear-gradient(90deg,#fff,#68ddff 45%,#b59cff);color:transparent;background-clip:text;-webkit-background-clip:text}.hero p{color:var(--muted);line-height:1.75;font-size:16px}.scene{height:280px;position:relative;perspective:900px}.shape{position:absolute;border:1px solid rgba(255,255,255,.15);box-shadow:inset 8px 8px 20px rgba(255,255,255,.07),inset -12px -16px 26px rgba(0,0,0,.35),0 30px 65px rgba(0,0,0,.32)}.s1{width:210px;height:150px;right:45px;top:18px;border-radius:30px;background:linear-gradient(145deg,#24577e,#0b1d31);transform:rotateY(-17deg) rotateX(8deg) rotateZ(7deg)}.s2{width:155px;height:118px;right:5px;bottom:18px;border-radius:26px;background:linear-gradient(145deg,#6849bc,#14213a);transform:rotateY(23deg) rotateX(-8deg) rotateZ(-8deg)}.s3{width:112px;height:112px;left:38px;bottom:28px;border-radius:50%;background:radial-gradient(circle at 34% 28%,#76ebff,#4675dc 44%,#14243b 77%)}.atom{position:absolute;right:95px;top:65px;font-size:72px;filter:drop-shadow(0 12px 16px rgba(0,0,0,.35))}
+.sectionHead{display:flex;justify-content:space-between;align-items:end;margin:28px 0 16px}.sectionHead h2{font-size:29px;margin:0}.sectionHead p{color:var(--muted);font-size:13px;margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-bottom:60px}.card{display:block;text-decoration:none;color:inherit;position:relative;min-height:215px;padding:22px;border:1px solid var(--line);border-radius:23px;background:linear-gradient(145deg,rgba(24,52,84,.95),rgba(8,21,37,.97));box-shadow:inset 4px 4px 11px rgba(255,255,255,.035),inset -8px -10px 20px rgba(0,0,0,.22),0 18px 42px rgba(0,0,0,.25);transition:.25s ease;overflow:hidden;cursor:pointer}.card:hover{transform:translateY(-6px);border-color:rgba(98,217,255,.44);box-shadow:0 27px 60px rgba(0,0,0,.36)}.card:after{content:"";position:absolute;width:145px;height:145px;right:-48px;top:-50px;border-radius:50%;background:radial-gradient(circle,rgba(87,219,255,.30),transparent 70%)}.type{font-size:11px;letter-spacing:1.7px;font-weight:900;color:#79ddff}.card h3{margin:20px 0 8px;font-size:21px}.card p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}.open{position:absolute;left:22px;bottom:20px;font-size:13px;font-weight:900;color:#e0f8ff}.open b{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:9px;margin-left:7px;background:linear-gradient(145deg,#347fae,#15344e)}
+#login{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:20px;background:radial-gradient(circle at 15% 10%,#193b63 0,transparent 31%),radial-gradient(circle at 90% 85%,#2e1b58 0,transparent 34%),#050b13}.loginbox{width:min(430px,100%);text-align:center;padding:32px;border:1px solid rgba(255,255,255,.14);border-radius:27px;background:linear-gradient(145deg,rgba(24,50,80,.96),rgba(7,17,30,.98));box-shadow:var(--shadow)}.lock{width:78px;height:78px;margin:0 auto 19px;border-radius:24px;display:grid;place-items:center;background:linear-gradient(145deg,#285f88,#11283f);font-size:35px;box-shadow:inset 4px 4px 10px rgba(255,255,255,.08),inset -8px -10px 15px rgba(0,0,0,.28),0 16px 34px rgba(0,0,0,.28)}.loginbox h2{margin:0 0 6px;font-size:28px}.loginbox p{margin:0 0 22px;color:var(--muted);font-size:14px}.pin{display:flex;gap:10px}.pin input{min-width:0;flex:1;padding:14px;border-radius:13px;border:1px solid rgba(255,255,255,.16);background:#091727;color:#fff;font-size:19px;letter-spacing:5px;outline:none}.pin button{border:0;border-radius:13px;padding:0 18px;color:#fff;font-weight:900;background:linear-gradient(145deg,#39a9d6,#416ae9);cursor:pointer}.error{height:20px;margin-top:11px;color:#ff9b9b;font-size:12px}
+#viewer{position:fixed;inset:0;z-index:5000;background:#07111f}.viewerbar{height:64px;display:flex;align-items:center;gap:10px;padding:0 12px;background:#07111f;border-bottom:1px solid rgba(255,255,255,.12)}.viewerbar button{border:1px solid rgba(255,255,255,.13);color:#fff;background:linear-gradient(145deg,#193b59,#0b2035);border-radius:11px;padding:10px 13px;font-weight:900;cursor:pointer}.viewerTitle{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#c7d8e8;font-size:13px;font-weight:800}.frameWrap{height:calc(100vh - 64px);background:#fff}.frameWrap iframe{display:block;width:100%;height:100%;border:0;background:#fff}.fallback{display:none;position:absolute;inset:64px 0 0;background:#fff;color:#111;padding:30px;text-align:center}.fallback a{display:inline-block;margin-top:15px;padding:12px 18px;background:#153e62;color:white;text-decoration:none;border-radius:10px;font-weight:800}.footer{text-align:center;color:#647b8e;font-size:11px;padding:0 0 32px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.scene{display:none}.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.secure{display:none}.hero{padding-top:28px}.grid{grid-template-columns:1fr}.card{min-height:195px}.sectionHead{align-items:flex-start;flex-direction:column;gap:6px}}
 </style>
 </head>
 <body>
@@ -32,49 +22,32 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;b
   <div class="loginbox">
     <div class="lock">🔒</div>
     <h2>Protected Learning Portal</h2>
-    <p>Enter access code to continue · 输入访问密码</p>
-    <form class="pin" id="loginForm">
-      <input id="pass" type="password" inputmode="numeric" autocomplete="off" maxlength="12" placeholder="•••" aria-label="Access code" />
-      <button type="submit">ENTER</button>
-    </form>
+    <p>Enter access code · 输入密码</p>
+    <form class="pin" id="loginForm"><input id="pass" type="password" inputmode="numeric" autocomplete="off" placeholder="•••"><button type="submit">ENTER</button></form>
     <div class="error" id="error"></div>
   </div>
 </div>
 
 <div id="app" class="hidden">
-  <header class="shell topbar">
-    <div class="brand"><div class="logo">⚗</div><div>SCIENCE 2026<small>Form 2 Reference Learning System</small></div></div>
-    <div class="status">● SECURE SESSION</div>
-  </header>
-  <main class="shell">
-    <section class="hero">
-      <div>
-        <div class="eyebrow">Interactive Science Library</div>
-        <h1><span>Learn.</span><br>Understand.<br>Master.</h1>
-        <p>A unified Form 2 Science learning portal. All original lesson HTML files are loaded as-is inside this portal; the educational content itself is not rewritten by the index.</p>
-      </div>
-      <div class="hero3d" aria-hidden="true"><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div><div class="atom">⚛</div><div class="caption">SCIENCE · STRUCTURE · MASTERY</div></div>
-    </section>
-
-    <div class="section-head"><div><div class="eyebrow">Library</div><h2>Choose a module</h2></div><p>点击模块进入 · Press Home to return</p></div>
-    <section class="grid" id="moduleGrid"></section>
-    <div class="footer-note">Private classroom portal interface · Original source lesson files remain unchanged</div>
-  </main>
+<header class="shell top"><div class="brand"><div class="logo">⚗</div><div>SCIENCE 2026<small>Form 2 Reference Learning System</small></div></div><div class="secure">● SECURE SESSION</div></header>
+<main class="shell">
+<section class="hero"><div><div class="eyebrow">Interactive Science Library</div><h1><span>Learn.</span><br>Understand.<br>Master.</h1><p>All lesson files remain as originally uploaded. The portal only organises and displays them in one website.</p></div><div class="scene" aria-hidden="true"><div class="shape s1"></div><div class="shape s2"></div><div class="shape s3"></div><div class="atom">⚛</div></div></section>
+<div class="sectionHead"><div><div class="eyebrow">Library</div><h2>Choose a module</h2></div><p>点击模块进入 · HOME 返回主页</p></div>
+<section class="grid" id="moduleGrid"></section>
+<div class="footer">Science 2026 Learning Portal</div>
+</main>
 </div>
 
 <div id="viewer" class="hidden">
-  <div class="viewerbar">
-    <button class="homebtn" id="homeBtn">← HOME / 主页</button>
-    <div class="viewer-title" id="viewerTitle">Lesson</div>
-    <button class="closebtn" id="closeBtn">✕</button>
-  </div>
-  <iframe id="lessonFrame" referrerpolicy="no-referrer"></iframe>
+  <div class="viewerbar"><button id="homeBtn">← HOME / 主页</button><div class="viewerTitle" id="viewerTitle">Lesson</div><button id="newTabBtn">↗ OPEN</button></div>
+  <div class="frameWrap"><iframe id="lessonFrame" title="Lesson"></iframe></div>
+  <div class="fallback" id="fallback"><h2>Module loading...</h2><p>If the lesson does not appear, use the button below.</p><a id="fallbackLink" href="#">Open lesson</a></div>
 </div>
 
 <script>
 const MODULES=[
  {type:'CHAPTER 8 · PRACTICE',title:'8.1 Force',desc:'Original 8.1 Force learning file',file:'F2_Science_Chapter8_Part1_8.1_Force.html'},
- {type:'CHAPTER 8 · REFERENCE',title:'8.1 Force — Answer Reference',desc:'Question → answer → bilingual explanation → keywords → memory technique',file:'F2_Science_Chapter8_Part1_8.1_Reference.html'},
+ {type:'CHAPTER 8 · REFERENCE',title:'8.1 Force — Answer Reference',desc:'Question, answer, bilingual explanation, keywords and memory technique',file:'F2_Science_Chapter8_Part1_8.1_Reference.html'},
  {type:'CHAPTER 8 · REFERENCE',title:'8.2 Effects of Force',desc:'Effects of force, buoyancy, density, lever, moment and pressure',file:'F2_Science_Chapter8_Part2_8.2_Reference (1).html'},
  {type:'SUBJECTIVE · CHAPTER 7',title:'Electricity & Magnetism',desc:'Subjective Question 1–8 reference',file:'F2_Science_SUBJ_Chapter7_Electricity_and_Magnetism_Q1-Q8_Reference.html'},
  {type:'SUBJECTIVE · CHAPTER 8',title:'Force & Motion',desc:'Subjective Question 1–7 reference',file:'F2_Science_SUBJ_Chapter8_Force_and_Motion_Q1-Q7_Reference.html'},
@@ -82,43 +55,66 @@ const MODULES=[
  {type:'VS / TP · SET 2',title:'Section B',desc:'Question 1–5 reference',file:'F2_Science_VS_TP_Set2_Section_B_Q1-Q5_Reference.html'},
  {type:'VS / TP · SET 2',title:'Section C',desc:'Question 1–6 reference',file:'F2_Science_VS_TP_Set2_Section_C_Q1-Q6_Reference.html'}
 ];
-
 const grid=document.getElementById('moduleGrid');
-MODULES.forEach((m,i)=>{
- const el=document.createElement('article');
- el.className='card'; el.tabIndex=0;
- el.innerHTML=`<div class="type">${m.type}</div><h3>${m.title}</h3><p>${m.desc}</p><div class="go">OPEN MODULE <b>›</b></div>`;
- el.onclick=()=>openLesson(m); el.onkeydown=e=>{if(e.key==='Enter')openLesson(m)};
- grid.appendChild(el);
+const viewer=document.getElementById('viewer');
+const frame=document.getElementById('lessonFrame');
+const titleEl=document.getElementById('viewerTitle');
+const fallback=document.getElementById('fallback');
+const fallbackLink=document.getElementById('fallbackLink');
+let currentURL='';
+
+function lessonURL(file){ return new URL(encodeURI(file), window.location.href).href; }
+function openLesson(m){
+  currentURL=lessonURL(m.file);
+  titleEl.textContent=m.title;
+  fallbackLink.href=currentURL;
+  frame.src=currentURL;
+  viewer.classList.remove('hidden');
+  fallback.style.display='none';
+  window.scrollTo(0,0);
+  clearTimeout(window.__lessonTimer);
+  window.__lessonTimer=setTimeout(()=>{ if(viewer && !viewer.classList.contains('hidden')) fallback.style.display='none'; },2500);
+}
+function closeLesson(){ frame.src='about:blank'; viewer.classList.add('hidden'); currentURL=''; }
+
+MODULES.forEach(m=>{
+  const a=document.createElement('a');
+  a.className='card';
+  a.href=lessonURL(m.file);
+  a.innerHTML=`<div class="type">${m.type}</div><h3>${m.title}</h3><p>${m.desc}</p><div class="open">OPEN MODULE <b>›</b></div>`;
+  a.addEventListener('click',e=>{e.preventDefault();openLesson(m)});
+  grid.appendChild(a);
 });
 
-const expectedHash='cc1af790b8e0c7460a7d41f6b57105ac04b4cac6a1edf9653bf85b006b77ee80';
-async function sha256(s){const b=new TextEncoder().encode(s);const h=await crypto.subtle.digest('SHA-256',b);return [...new Uint8Array(h)].map(x=>x.toString(16).padStart(2,'0')).join('')}
-function unlock(){document.getElementById('login').classList.add('hidden');document.getElementById('app').classList.remove('hidden');sessionStorage.setItem('science2026_access','1')}
-if(sessionStorage.getItem('science2026_access')==='1') unlock();
-document.getElementById('loginForm').addEventListener('submit',async e=>{e.preventDefault();const v=document.getElementById('pass').value;const h=await sha256(v);if(h===expectedHash){unlock()}else{document.getElementById('error').textContent='Incorrect access code / 密码错误';document.getElementById('pass').value='';document.getElementById('pass').focus()}});
+document.getElementById('homeBtn').addEventListener('click',closeLesson);
+document.getElementById('newTabBtn').addEventListener('click',()=>{if(currentURL)window.open(currentURL,'_blank','noopener')});
 
-const viewer=document.getElementById('viewer'),frame=document.getElementById('lessonFrame'),vtitle=document.getElementById('viewerTitle');
-function openLesson(m){vtitle.textContent=m.title;viewer.classList.remove('hidden');frame.src=encodeURI(m.file);document.body.style.overflow='hidden';location.hash='lesson'}
-function closeLesson(){viewer.classList.add('hidden');frame.src='about:blank';document.body.style.overflow='';history.replaceState(null,'',location.pathname+location.search)}
-document.getElementById('homeBtn').onclick=closeLesson;document.getElementById('closeBtn').onclick=closeLesson;
-window.addEventListener('popstate',()=>{if(!viewer.classList.contains('hidden'))closeLesson()});
-
-// Casual-copy deterrence. This does not claim to be cryptographic DRM.
-function blockCommonCopyActions(doc){
- try{
-   doc.addEventListener('contextmenu',e=>e.preventDefault(),true);
-   doc.addEventListener('dragstart',e=>e.preventDefault(),true);
-   doc.addEventListener('copy',e=>e.preventDefault(),true);
-   doc.addEventListener('keydown',e=>{
-     const k=e.key.toLowerCase();
-     if(e.key==='F12'||(e.ctrlKey&&e.shiftKey&&['i','j','c'].includes(k))||(e.ctrlKey&&['u','s'].includes(k))){e.preventDefault();e.stopPropagation()}
-   },true);
-   const st=doc.createElement('style');st.textContent='@media screen{body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}}';doc.head&&doc.head.appendChild(st);
- }catch(_){ }
+document.getElementById('loginForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const v=document.getElementById('pass').value.trim();
+  if(v==='008'){
+    sessionStorage.setItem('science2026_access','1');
+    document.getElementById('login').classList.add('hidden');
+    document.getElementById('app').classList.remove('hidden');
+    document.getElementById('error').textContent='';
+  }else{
+    document.getElementById('error').textContent='Incorrect access code / 密码错误';
+    document.getElementById('pass').value='';
+  }
+});
+if(sessionStorage.getItem('science2026_access')==='1'){
+  document.getElementById('login').classList.add('hidden');
+  document.getElementById('app').classList.remove('hidden');
 }
-blockCommonCopyActions(document);
-frame.addEventListener('load',()=>{try{blockCommonCopyActions(frame.contentDocument)}catch(_){}});
+
+// Basic anti-copy friction. This cannot make public static HTML impossible to inspect.
+document.addEventListener('contextmenu',e=>e.preventDefault());
+document.addEventListener('dragstart',e=>e.preventDefault());
+document.addEventListener('keydown',e=>{
+  const k=e.key.toLowerCase();
+  if((e.ctrlKey||e.metaKey) && ['u','s','p'].includes(k)) e.preventDefault();
+  if(e.key==='F12') e.preventDefault();
+});
 </script>
 </body>
 </html>
